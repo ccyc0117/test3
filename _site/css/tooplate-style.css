@@ -27,7 +27,7 @@ p {
 }
 
 p, .tm-gallery-item .tm-figcaption { color: #333; }
-.tm-font-thin { font-weight: 300; }
+.tm-font-thin { font-weight: 200; }
 
 button {
 	cursor: pointer;
