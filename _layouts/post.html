@@ -36,20 +36,23 @@
               </div>
             </nav>
           </header> 
+{% for post in site.posts %}
         <div class="tm-main-content no-pad-b">
-        {% for post in site.posts %}
+        
         <section class="row tm-item-article">
+
             <div class="col-md-6 col-sm-12 mb-md-0 mb-5">
+
                 <img src="{{post.pic}}" alt="Image" class="img-fluid tm-img-center-sm">
             </div>
             <div class="col-md-6 col-sm-12">
                 <h2 class="tm-blue-text tm-margin-b-p">{{post.title}}</h2>
                  {{content}}
-                {% endfor %}
                     </div>
-                </section>                  
+                </section> 
+                                
             </div>
-
+{% endfor %} 
           <div class="tm-gallery no-pad-b">
             <div class="row">
               <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item mb-5">

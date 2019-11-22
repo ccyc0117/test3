@@ -53,46 +53,25 @@
 
 
                 {{content}}
+            
+                <div class="tm-gallery">
+                    <div class="row">
+                        {% for post in site.posts %}
+                        <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 
-                 <div class="tm-gallery">
-                <div class="row">
-                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                        <a href="article.html">
-                            <div class="tm-gallery-item-overlay">
-                                <img src="img/01.jpg" alt="Image" class="img-fluid tm-img-center">
-                            </div>
-                            
-                            <p class="tm-figcaption">文章一</p>
-                        </a>
-                    </figure>
-                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                        <a href="article.html">
-                            <div class="tm-gallery-item-overlay">
-                                <img src="img/02.jpg" alt="Image" class="img-fluid tm-img-center">
-                            </div>
-                            <p class="tm-figcaption">文章二</p>
-                        </a>
-                    </figure>
-                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                        <a href="article.html">
-                            <div class="tm-gallery-item-overlay">
-                                <img src="img/01.jpg" alt="Image" class="img-fluid tm-img-center">
-                            </div>
-                            <p class="tm-figcaption">文章三</p>
-                        </a>
-                    </figure>
-                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-                        <a href="article.html">
-                            <div class="tm-gallery-item-overlay">
-                                <img src="img/02.jpg" alt="Image" class="img-fluid tm-img-center">
-                            </div>
-                            <p class="tm-figcaption">文章四</p>
-                        </a>
-                    </figure>
-                    
-                </div>   
-            </div>
+                            <a href="article.html">
+                                <div class="tm-gallery-item-overlay">
+                                    <img src="{{post.pic}}" alt="Image" class="img-fluid tm-img-center">
+                                </div>
+                                
+                                <p class="tm-figcaption">{{post.title}}</p>
+                            </a>
 
+                        </figure>
+                           {% endfor %}
+                    </div>   
+                </div>
+              
                 <nav class="tm-gallery-nav">
                     <ul class="nav justify-content-center">
                         <li class="nav-item"><a class="nav-link active" href="#">1</a></li>
